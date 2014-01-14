@@ -1,0 +1,31 @@
+{
+  "name": "gulp-notify-growl",
+  "version": "0.0.1",
+  "description": "A custom notifier for gulp-notifier to send messages to Growl clients using GNTP",
+  "keywords": [
+    "gulp",
+    "notify",
+    "notification",
+    "growl",
+    "snarl",
+    "gntp"
+  ],
+  "homepage": "https://github.com/yannickcr/gulp-notify-growl",
+  "main": "./lib/gulp-notify-growl.js",
+  "dependencies": {
+    "growler": "~0.0.1",
+    "async": "~0.2.9"
+  },
+  "peerDependencies": {
+    "gulp": "~3.3.2",
+    "gulp-notify": "~0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
