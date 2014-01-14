@@ -1,7 +1,7 @@
 {
   "name": "gulp-notify-growl",
   "version": "0.0.1",
-  "description": "A custom notifier for gulp-notifier to send messages to Growl clients using GNTP",
+  "description": "A custom notifier for gulp-notify to send messages to Growl clients using GNTP",
   "keywords": [
     "gulp",
     "notify",
@@ -13,19 +13,30 @@
   "homepage": "https://github.com/yannickcr/gulp-notify-growl",
   "main": "./lib/gulp-notify-growl.js",
   "dependencies": {
-    "growler": "~0.0.1",
-    "async": "~0.2.9"
+    "growler": "~0.0.1"
   },
   "peerDependencies": {
     "gulp": "~3.3.2",
-    "gulp-notify": "~0.1.0"
+    "gulp-notify": "~0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=0.6.0"
+    "node": ">=0.9.0"
   },
-  "author": "",
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/yannickcr/gulp-notify-growl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yannickcr/gulp-notify-growl.git"
+  },
+  "author": "Yannick Croissant (https://github.com/yannickcr)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/yannickcr/gulp-notify-growl/master/LICENSE"
+    }
+  ]
 }
