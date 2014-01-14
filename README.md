@@ -1,4 +1,120 @@
-gulp-notify-growl
-=================
+# gulp-notify-growl
 
-A custom notifier for gulp-notifier to send messages to Growl clients using GNTP
+[![NPM version][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Code Climate][climate-image]][climate-url]
+
+A custom notifier for [gulp-notify](https://github.com/mikaelbr/gulp-notify) to send messages to Growl clients using GNTP.
+
+![](http://i.imgur.com/ZX3BczG.png) ![](http://i.imgur.com/gaZwwbt.png)
+
+# Installation
+
+    $ npm install gulp-notify-growl --save-dev
+
+# Usage
+
+In your `gulpfile.js`:
+
+```javascript
+var
+  gulp    = require('gulp'),
+  notify  = require('gulp-notify'),
+  growl   = require('gulp-notify-growl.js')
+;
+
+// Initialize the notifier
+var growlNotifier = growl({
+  hostname : '192.168.0.10' // IP or Hostname to notify, default to localhost
+});
+
+gulp.task('default', function() {
+  gulp.src('./src/dummy.js')
+  .pipe(notify({
+    title: 'Done.',
+    message: 'Done something with dummy.js',
+    notifier: growlNotifier
+  }));
+});
+```
+
+## Options
+
+### hostname
+
+Type: `String`
+
+IP or Hostname to notify, default to `localhost`.
+
+### port
+
+Type: `Number`
+
+GNTP port, default to `23053`.
+
+### timeout
+
+Type: `Number`
+
+Socket inactivity timeout, default to `5000`.
+
+### Icon
+
+Type: `Buffer`
+
+Icon to display in the notification, default to the [gulp icon](lib/gulp.png).
+
+#### Example
+
+```javascript
+var growlNotifier = growl({
+  hostname : '192.168.0.10',
+  icon : fs.readFileSync('doge.png')
+});
+```
+
+### additionalHeaders
+
+Type: `Object`
+
+Additional GNTP headers sent on all requests.
+
+#### Example
+
+```javascript
+var growlNotifier = growl({
+  hostname : '192.168.0.10',
+  additionalHeaders: {
+    'X-Foo': 'bar'
+  }
+});
+```
+
+### password
+
+Type: `String`
+
+Password is set in the Growl client settings.
+
+### hashAlgorithm
+
+Type: `String`
+
+Hash algorithm when sending the messages, possible values: `MD5`, `SHA1`, `SHA256` and `SHA512`. Default to `SHA256`.
+
+### encryption
+
+Type: `String`
+
+Encryption used when sending the messages, possible values: `AES`, `DES` and `3DES`. Default to no encryption.
+
+# License
+
+gulp-notify-growl is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+
+[npm-url]: https://npmjs.org/package/gulp-notify-growl
+[npm-image]: https://badge.fury.io/js/gulp-notify-growl.png
+
+[deps-url]: https://gemnasium.com/yannickcr/gulp-notify-growl
+[deps-image]: https://gemnasium.com/yannickcr/gulp-notify-growl.png
+
+[climate-url]: https://codeclimate.com/github/yannickcr/gulp-notify-growl
+[climate-image]: https://codeclimate.com/github/yannickcr/gulp-notify-growl.png
