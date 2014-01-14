@@ -18,7 +18,7 @@ In your `gulpfile.js`:
 var
   gulp    = require('gulp'),
   notify  = require('gulp-notify'),
-  growl   = require('gulp-notify-growl.js')
+  growl   = require('gulp-notify-growl')
 ;
 
 // Initialize the notifier
@@ -27,10 +27,10 @@ var growlNotifier = growl({
 });
 
 gulp.task('default', function() {
-  gulp.src('./src/dummy.js')
+  gulp.src('./package.json')
   .pipe(notify({
     title: 'Done.',
-    message: 'Done something with dummy.js',
+    message: 'Done something with the package.json',
     notifier: growlNotifier
   }));
 });
