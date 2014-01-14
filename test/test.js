@@ -4,19 +4,21 @@ var
   fs      = require('fs'),
   gulp    = require('gulp'),
   notify  = require('gulp-notify'),
-  growl   = require('./lib/gulp-notify-growl.js')
+  growl   = require('./../lib/gulp-notify-growl.js')
 ;
 
 var growlNotifier = growl({
   hostname: '192.168.0.10',
-  icon    : fs.readFileSync(__dirname + '/lib/gulp.png')
+  icon    : fs.readFileSync(__dirname + '/doge.png')
 });
 
 gulp.task('default', function() {
   gulp.src('./package.json')
   .pipe(notify({
-    title: 'Very glup',
-    message: 'So notification',
+    title: 'Very gulp',
+    message: 'Such notification. So growl. Wow',
     notifier: growlNotifier
   }));
 });
+
+gulp.run();
