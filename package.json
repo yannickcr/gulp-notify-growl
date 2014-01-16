@@ -15,12 +15,29 @@
   "dependencies": {
     "growler": "~0.0.1"
   },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "chai": "~1.8.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "blanket": "~1.1.6",
+    "coveralls": "~2.6.1",
+    "jscs": "~1.2.3"
+  },
   "peerDependencies": {
     "gulp": "~3.3.2",
     "gulp-notify": "~0.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha test --reporter=spec",
+    "coverage": "node ./node_modules/mocha/bin/mocha test --require blanket --reporter=html-cov > coverage.html",
+    "checkstyle": "node ./node_modules/jscs/bin/jscs ."
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "/lib/gulp-notify-growl.js"
+      ]
+    }
   },
   "engines": {
     "node": ">=0.9.0"
