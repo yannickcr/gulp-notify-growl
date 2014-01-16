@@ -1,6 +1,6 @@
 # gulp-notify-growl
 
-[![NPM version][npm-image]][npm-url] [![Dependency Status][deps-image]][deps-url] [![Code Climate][climate-image]][climate-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url] [![Coverage Status][coverage-image]][coverage-url] [![Code Climate][climate-image]][climate-url]
 
 A custom notifier for [gulp-notify](https://github.com/mikaelbr/gulp-notify) to send messages to Growl clients using GNTP.
 
@@ -113,8 +113,14 @@ gulp-notify-growl is licensed under the [MIT License](http://www.opensource.org/
 [npm-url]: https://npmjs.org/package/gulp-notify-growl
 [npm-image]: https://badge.fury.io/js/gulp-notify-growl.png
 
+[travis-url]: https://travis-ci.org/yannickcr/gulp-notify-growl
+[travis-image]: https://travis-ci.org/yannickcr/gulp-notify-growl.png?branch=master
+
 [deps-url]: https://gemnasium.com/yannickcr/gulp-notify-growl
 [deps-image]: https://gemnasium.com/yannickcr/gulp-notify-growl.png
+
+[coverage-url]: https://coveralls.io/r/yannickcr/gulp-notify-growl?branch=master
+[coverage-image]: https://coveralls.io/repos/yannickcr/gulp-notify-growl/badge.png?branch=master
 
 [climate-url]: https://codeclimate.com/github/yannickcr/gulp-notify-growl
 [climate-image]: https://codeclimate.com/github/yannickcr/gulp-notify-growl.png
