@@ -25,7 +25,7 @@
   },
   "peerDependencies": {
     "gulp": "~3.3.2",
-    "gulp-notify": "~0.2.0"
+    "gulp-notify": "~0.4.0"
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha test --reporter=spec",
