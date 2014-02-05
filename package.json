@@ -24,7 +24,7 @@
     "jscs": "~1.2.3"
   },
   "peerDependencies": {
-    "gulp": "~3.3.2",
+    "gulp": "~3.5.0",
     "gulp-notify": "~0.4.0"
   },
   "scripts": {
