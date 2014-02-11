@@ -71,14 +71,14 @@ describe('constructor', function() {
         password         : 'test',
         hashAlgorithm    : 'SHA512',
         encryption       : 'AES'
-      }),
+      }, 'CustomNotifier'),
       testIcon   = fs.readFileSync(__dirname + '/doge.png').toString('base64')
     ;
 
     it('must create a growlNotifier', function() {
       expect(growlNotifier).to.be.a('function');
       expect(growlNotifier.app).to.be.an.instanceof(growler.GrowlApplication);
-      expect(growlNotifier.app.name).to.equal('Gulp');
+      expect(growlNotifier.app.name).to.equal('CustomNotifier');
     });
 
     it('must use user options', function() {
