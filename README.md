@@ -106,6 +106,27 @@ Type: `String`
 
 Encryption used when sending the messages, possible values: `AES`, `DES` and `3DES`. Default to no encryption.
 
+### appName
+
+Type: `String`
+
+Second argument for custom application name registered in growl.
+Allows for multiple growlNotifiers with different application names.
+
+#### Example
+
+```javascript
+var growlPHPUnitNotifier = growl({
+  hostname : '192.168.0.10',
+  icon : fs.readFileSync('doge.png')
+}, 'Very Unit!');
+
+var growlSassNotifier = growl({
+  hostname : '192.168.0.10',
+  icon : fs.readFileSync('doge.png')
+}, 'Many Sass!');
+```
+
 # License
 
 gulp-notify-growl is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
