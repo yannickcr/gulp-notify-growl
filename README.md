@@ -22,16 +22,15 @@ var
 ;
 
 // Initialize the notifier
-var growlNotifier = growl({
+var growlNotifier = notify.withReporter(growl({
   hostname : '192.168.0.10' // IP or Hostname to notify, default to localhost
-});
+}));
 
 gulp.task('default', function() {
   gulp.src('./package.json')
-  .pipe(notify({
+  .pipe(growlNotifier({
     title: 'Done.',
-    message: 'Done something with the package.json',
-    notifier: growlNotifier
+    message: 'Done something with the package.json'
   }));
 });
 ```
