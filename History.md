@@ -1,3 +1,8 @@
+0.1.1 / 2014-02-17
+==================
+ * update documentation to match the new gulp-notify syntax
+ * update dependencies to latest versions
+
 0.1.0 / 2014-02-12
 ==================
  * add second argument for custom application name ([#3][] @isimmons)

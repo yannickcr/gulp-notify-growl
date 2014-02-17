@@ -1,6 +1,6 @@
 {
   "name": "gulp-notify-growl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A custom notifier for gulp-notify to send messages to Growl clients using GNTP",
   "keywords": [
     "gulp",
