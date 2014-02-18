@@ -1,3 +1,7 @@
+0.1.2 / 2014-02-18
+==================
+ * update gulp-notify to latest versions
+
 0.1.1 / 2014-02-17
 ==================
  * update documentation to match the new gulp-notify syntax
