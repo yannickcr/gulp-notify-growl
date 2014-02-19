@@ -1,3 +1,9 @@
+1.0.0 / 2014-02-19
+==================
+ * wrap gulp-notify instead of using it as a peerDependency ([#7][])
+
+[#7]: https://github.com/yannickcr/gulp-notify-growl/issues/7
+
 0.1.2 / 2014-02-18
 ==================
  * update gulp-notify to latest versions
