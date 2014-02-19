@@ -6,6 +6,7 @@ var
   chai    = require('chai'),
   expect  = chai.expect,
   growler = require('growler'),
+  gulp    = require('gulp'),
   growl   = require('./../lib/gulp-notify-growl'),
   registerResponse = [
     'GNTP/1.0 -OK NONE',
@@ -128,17 +129,19 @@ describe('notifier', function() {
       if (/GNTP\/1\.0 NOTIFY NONE/.test(content)) {
         expect(content).to.match(/Notification-Title: Test title/);
         expect(content).to.match(/Notification-Text: Test message/);
+        done();
       }
     });
 
-    growlNotifier({
-      title: 'Test title',
-      message: 'Test message'
-    }, function(err, success) {
-      expect(err).to.equal(undefined);
-      expect(success).to.equal(true);
-      done();
+    gulp.task('default', function() {
+      gulp.src('./package.json')
+      .pipe(growlNotifier({
+        title: 'Test title',
+        message: 'Test message'
+      }));
     });
+
+    gulp.start();
 
   });
 

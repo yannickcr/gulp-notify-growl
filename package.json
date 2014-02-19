@@ -13,19 +13,17 @@
   "homepage": "https://github.com/yannickcr/gulp-notify-growl",
   "main": "./lib/gulp-notify-growl.js",
   "dependencies": {
-    "growler": "~0.0.1"
+    "growler": "~0.0.1",
+    "gulp-notify": "~0.6.0"
   },
   "devDependencies": {
+    "gulp": "~3.5.2",
     "mocha": "~1.17.0",
     "chai": "~1.9.0",
     "mocha-lcov-reporter": "0.0.1",
     "blanket": "~1.1.6",
     "coveralls": "~2.8.0",
     "jscs": "~1.2.3"
-  },
-  "peerDependencies": {
-    "gulp": "^3.3.0",
-    "gulp-notify": "^0.6.0"
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha test --reporter=spec",
