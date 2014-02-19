@@ -16,15 +16,14 @@ In your `gulpfile.js`:
 
 ```javascript
 var
-  gulp    = require('gulp'),
-  notify  = require('gulp-notify'),
-  growl   = require('gulp-notify-growl')
+  gulp  = require('gulp'),
+  growl = require('gulp-notify-growl')
 ;
 
 // Initialize the notifier
-var growlNotifier = notify.withReporter(growl({
+var growlNotifier = growl({
   hostname : '192.168.0.10' // IP or Hostname to notify, default to localhost
-}));
+});
 
 gulp.task('default', function() {
   gulp.src('./package.json')
