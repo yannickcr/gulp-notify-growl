@@ -4,6 +4,7 @@
   "description": "A custom notifier for gulp-notify to send messages to Growl clients using GNTP",
   "keywords": [
     "gulp",
+    "gulpplugin",
     "notify",
     "notification",
     "growl",
