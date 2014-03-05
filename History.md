@@ -1,3 +1,9 @@
+1.0.1 / 2014-03-05
+==================
+ * adding `gulpplugin` keyword so module shows up in http://gulpjs.com/plugins/ ([#8][] @pdehaan)
+
+[#8]: https://github.com/yannickcr/gulp-notify-growl/pull/8
+
 1.0.0 / 2014-02-19
 ==================
  * wrap gulp-notify instead of using it as a peerDependency ([#7][])
