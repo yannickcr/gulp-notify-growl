@@ -1,10 +1,12 @@
 # gulp-notify-growl
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url] [![Coverage Status][coverage-image]][coverage-url] [![Code Climate][climate-image]][climate-url]
+[![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url] [![Coverage Status][coverage-image]][coverage-url] [![Code Climate][climate-image]][climate-url]
 
 A custom notifier for [gulp-notify](https://github.com/mikaelbr/gulp-notify) to send messages to Growl clients using GNTP.
 
 ![](http://i.imgur.com/ZX3BczG.png) ![](http://i.imgur.com/gaZwwbt.png)
+
+**After gulp-notify v1.1.0 Growl is natively supported and this custom notifier is no longer needed.**
 
 # Installation
 
@@ -130,16 +132,19 @@ var growlSassNotifier = growl({
 gulp-notify-growl is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 [npm-url]: https://npmjs.org/package/gulp-notify-growl
-[npm-image]: https://badge.fury.io/js/gulp-notify-growl.png
+[npm-image]: http://img.shields.io/npm/v/gulp-notify-growl.svg?style=flat
 
 [travis-url]: https://travis-ci.org/yannickcr/gulp-notify-growl
-[travis-image]: https://travis-ci.org/yannickcr/gulp-notify-growl.png?branch=master
+[travis-image]: http://img.shields.io/travis/yannickcr/gulp-notify-growl/master.svg?style=flat
 
 [deps-url]: https://gemnasium.com/yannickcr/gulp-notify-growl
-[deps-image]: https://gemnasium.com/yannickcr/gulp-notify-growl.png
+[deps-image]: http://img.shields.io/gemnasium/yannickcr/gulp-notify-growl.svg?style=flat
 
 [coverage-url]: https://coveralls.io/r/yannickcr/gulp-notify-growl?branch=master
-[coverage-image]: https://coveralls.io/repos/yannickcr/gulp-notify-growl/badge.png?branch=master
+[coverage-image]: http://img.shields.io/coveralls/yannickcr/gulp-notify-growl/master.svg?style=flat
 
 [climate-url]: https://codeclimate.com/github/yannickcr/gulp-notify-growl
-[climate-image]: https://codeclimate.com/github/yannickcr/gulp-notify-growl.png
+[climate-image]: http://img.shields.io/codeclimate/github/yannickcr/gulp-notify-growl.svg?style=flat
+
+[status-url]: https://github.com/yannickcr/gulp-notify-growl/issues/9
+[status-image]: http://img.shields.io/badge/status-deprecated-red.svg?style=flat

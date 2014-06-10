@@ -1,3 +1,9 @@
+1.0.2 / 2014-06-11
+==================
+ * Growl is now natively supported by `gulp-notify`, deprecating this module ([#9][])
+
+[#9]: https://github.com/yannickcr/gulp-notify-growl/issues/9
+
 1.0.1 / 2014-03-05
 ==================
  * adding `gulpplugin` keyword so module shows up in http://gulpjs.com/plugins/ ([#8][] @pdehaan)
